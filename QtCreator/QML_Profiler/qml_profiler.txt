@@ -1,0 +1,12 @@
+http://cdn2.hubspot.net/hubfs/149513/Japan/2015_Japan_Summit_Presentations/QtJS15_QtCreator_-_SRA.pdf
+
+QML Profiler
+? QMLのプロファイリング
+? qmlのコンパイル、アイテムの生成、バインディング、シグナルの処理時間
+? 描画、シーングラフ(商用版)
+? リモート実行時も取得可能
+? ネットワーク経由 or qmlprofilerコマンド経由
+? Qt Quick 2(Qt 5)で対応イベントを大幅に拡大
+? オーバーヘッド増
+? パフォーマンス解析には必須
+
