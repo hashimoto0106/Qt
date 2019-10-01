@@ -1,0 +1,54 @@
+Affine Transformations
+C:\Qt\Examples\Qt-5.12.2\widgets\painting
+画像処理（傾け）・アニメーション
+
+Application Example
+C:\Qt\Examples\Qt-5.12.2\widgets\mainwindows
+メニュー・ファイル保存・読み込み
+
+
+Map Viewer
+C:\Qt\Examples\Qt-5.12.2\location
+
+Dashboard
+C:\Qt\Examples\Qt-5.12.2\quickcontrols\extras
+タコメーター
+
+Basic Layouts
+C:\Qt\Examples\Qt-5.12.2\widgets\layouts\
+
+
+Books
+C:\Qt\Examples\Qt-5.12.2\sql
+
+
+Cached Table
+C:\Qt\Examples\Qt-5.12.2\sql\build-cachedtable-Desktop_Qt_5_12_2_MSVC2017_64bit-Debug
+MaintPCに使える
+
+
+Chart
+C:\Qt\Examples\Qt-5.12.2\widgets\itemviews
+
+Completer
+C:\Qt\Examples\Qt-5.12.2\widgets\tools\
+補完
+
+Custom Sort/Filter
+C:\Qt\Examples\Qt-5.12.2\widgets\itemviews\
+
+
+Spectrum Example
+C:\Qt\Examples\Qt-5.12.2\multimedia\build-spectrum-Desktop_Qt_5_12_2_MSVC2017_64bit-Debug
+アニメーション　グラフ
+
+Scene Graph
+アニメーション　グラフ
+C:\Qt\Examples\Qt-5.12.2\quick\scenegraph\build-graph-Desktop_Qt_5_12_2_MSVC2017_64bit-Debug
+C:\Qt\Examples\Qt-5.12.2\quick\scenegraph\build-customgeometry-Desktop_Qt_5_12_2_MSVC2017_64bit-Debug
+
+QML Video
+
+
+
+
