@@ -55,7 +55,35 @@ void getSerialPortInfo(void)
 //    }
 //}
 
+void initSerialPort(void)
+{
+    QSerialPort serialPort;
+    serialPort.setPortName( QString( "COM6" ) );
 
+    // baudRate,dataBits,parity,stopBits:
+    // Arduinoのスケッチで指定したものと同じ数値を指定する
+    serialPort.setBaudRate( QSerialPort::Baud115200 );
+    // ちなみに以下はArduinoのスケッチでSerial.beginの第2引数を省略した時の値
+    serialPort.setDataBits( QSerialPort::Data8 );
+    serialPort.setParity(   QSerialPort::NoParity );
+    serialPort.setStopBits( QSerialPort::OneStop );
+
+    if ( serialPort.open( QIODevice::ReadOnly ) )
+    {
+        qDebug() << "Open the port [COM6].";
+
+//        connect( serialPort, &QSerialPort::readyRead,
+//                 this,        &MainWindow::printData );
+
+        serialPort.close();
+    }
+    else
+    {
+        qDebug() << "Couldn't open the port [COM6].";
+    }
+
+    serialPort.close();
+}
 //https://garberas.com/archives/1619
 //void initSerialPort(void)
 //{

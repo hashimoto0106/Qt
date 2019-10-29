@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
     w.show();
 
     getSerialPortInfo();
+    initSerialPort();
 
     return a.exec();
 }
