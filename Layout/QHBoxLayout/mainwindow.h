@@ -14,6 +14,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void testVBoxLayout();
+    void testHierarchiBL();
 
 private:
     Ui::MainWindow *ui;
