@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QSettings>
+#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -8,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     readSettings();
+    ui->statusbar->showMessage("Hello! World!");
 }
 
 MainWindow::~MainWindow()
@@ -32,5 +34,6 @@ void MainWindow::readSettings()
 
 void MainWindow::closeEvent(QCloseEvent *event)
 {
+    qDebug() << "closeEvent";
     writeSettings();
 }
