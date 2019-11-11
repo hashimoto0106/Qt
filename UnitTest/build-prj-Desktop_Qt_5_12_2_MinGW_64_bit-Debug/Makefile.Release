@@ -214,7 +214,7 @@ release/moc_mainwindow.cpp: ../prj/mainwindow.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtGui/qicon.h \
 		release/moc_predefs.h \
 		C:/Qt/5.12.2/mingw73_64/bin/moc.exe
-	'C:\Qt\5.12.2\mingw73_64\bin\moc.exe' $(DEFINES) --include D:/github/Qt/SystemCommand/build-prj-Desktop_Qt_5_12_2_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/5.12.2/mingw73_64/mkspecs/win32-g++ -ID:/github/Qt/SystemCommand/prj -IC:/Qt/5.12.2/mingw73_64/include -IC:/Qt/5.12.2/mingw73_64/include/QtWidgets -IC:/Qt/5.12.2/mingw73_64/include/QtGui -IC:/Qt/5.12.2/mingw73_64/include/QtANGLE -IC:/Qt/5.12.2/mingw73_64/include/QtCore -I. -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Tools/mingw730_64/x86_64-w64-mingw32/include ../prj/mainwindow.h -o release/moc_mainwindow.cpp
+	'C:\Qt\5.12.2\mingw73_64\bin\moc.exe' $(DEFINES) --include D:/github/Qt/UnitTest/build-prj-Desktop_Qt_5_12_2_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/5.12.2/mingw73_64/mkspecs/win32-g++ -ID:/github/Qt/UnitTest/prj -IC:/Qt/5.12.2/mingw73_64/include -IC:/Qt/5.12.2/mingw73_64/include/QtWidgets -IC:/Qt/5.12.2/mingw73_64/include/QtGui -IC:/Qt/5.12.2/mingw73_64/include/QtANGLE -IC:/Qt/5.12.2/mingw73_64/include/QtCore -I. -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Tools/mingw730_64/x86_64-w64-mingw32/include ../prj/mainwindow.h -o release/moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -352,9 +352,7 @@ release/main.o: ../prj/main.cpp ../prj/mainwindow.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtCore/qeventloop.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtGui/qguiapplication.h \
-		C:/Qt/5.12.2/mingw73_64/include/QtGui/qinputmethod.h \
-		C:/Qt/5.12.2/mingw73_64/include/QtCore/QProcess \
-		C:/Qt/5.12.2/mingw73_64/include/QtCore/qprocess.h
+		C:/Qt/5.12.2/mingw73_64/include/QtGui/qinputmethod.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/main.o ../prj/main.cpp
 
 release/mainwindow.o: ../prj/mainwindow.cpp ../prj/mainwindow.h \
