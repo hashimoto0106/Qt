@@ -22,6 +22,9 @@ void MainWindow::writeSettings()
     QSettings settings;
     settings.setValue("geometry", saveGeometry());
     settings.setValue("windowState", saveState());
+
+    qDebug() << geometry().width();
+    qDebug() << geometry().height();
 }
 
 void MainWindow::readSettings()
@@ -29,6 +32,9 @@ void MainWindow::readSettings()
     QSettings settings;
     restoreGeometry(settings.value("geometry").toByteArray());
     restoreState(settings.value("windowState").toByteArray());
+
+    qDebug() << geometry().width();
+    qDebug() << geometry().height();
 }
 
 

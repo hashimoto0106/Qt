@@ -1,0 +1,14 @@
+
+QSettingsを用いて、画面のサイズをセーブ・ロード
+http://nprogram.hatenablog.com/entry/2017/08/07/221543
+
+画面設定内容をセーブ・ロード
+https://qt-is-cute.com/how-to-use-ini-file-with-qt/
+
+ステータスバー
+ui->statusbar->showMessage("Hello! World!");
+
+
+
+
+
