@@ -9,6 +9,11 @@ https://qt-is-cute.com/how-to-use-ini-file-with-qt/
 ui->statusbar->showMessage("Hello! World!");
 
 
+Å°sftp
+https://www.google.co.jp/search?lr=lang_ja&hl=ja&tbs=lr%3Alang_1ja&source=hp&q=sftp%20bat
+https://webkaru.net/linux/sftp-command/
+https://www.google.co.jp/search?lr=lang_ja&hl=ja&tbs=lr%3Alang_1ja&source=hp&q=sftp%20%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89
+https://qiita.com/sasaplus1/items/619283711399c55306b6
 
 
 
