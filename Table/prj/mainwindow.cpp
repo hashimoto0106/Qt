@@ -66,6 +66,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     //カラム[0]の列幅設定
     tblWdgt->setColumnWidth(COL_1,100);
+    tblWdgt->verticalHeader()->setDefaultSectionSize(20);
 
     // 選択したセルの色をデフォルトのグレーから変更する
     // 親のカラーパレットを取得し変更する
@@ -101,7 +102,7 @@ void MainWindow::on_pushButton_clicked()
     item[COL_2] = new QTableWidgetItem(QString("data2 #%8.0f").arg(0.1));
     item[COL_3] = new QTableWidgetItem(QString("data3 #%8.0f").arg(0.1));
     item[COL_4] = new QTableWidgetItem(QString("data4 #%8.0f").arg(0.1));
-    item[COL_5] = new QTableWidgetItem(QString("data5 #%8.0f").arg(0.1));
+//    item[COL_5] = new QTableWidgetItem(QString("data5 #%8.0f").arg(0.1));
     for(int ncol=0;ncol<COL_MAX;ncol++){ tblWdgt->setItem(m_row, ncol, item[ncol]);}
 
     // 指定したアイテム（行）までスクロール(列は未指定）
@@ -110,4 +111,21 @@ void MainWindow::on_pushButton_clicked()
 
     //行インクリメント
     m_row++;
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    QTableWidget* tblWdgt = ui->tableWidget;
+    tblWdgt->setItem(m_row, 0, new QTableWidgetItem("DD/MM/YYYY hh:mm:ss.sss"));
+    tblWdgt->setItem(m_row, 1, new QTableWidgetItem("Signal 0001"));
+    tblWdgt->setItem(m_row, 2, new QTableWidgetItem("On"));
+    m_row++;
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    QTableWidget* tblWdgt = ui->tableWidget;
+    tblWdgt->clear();
+//    tblWdgt->removeRow(m_row);
+    m_row=0;
 }
