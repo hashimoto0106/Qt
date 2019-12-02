@@ -353,6 +353,7 @@ debug/main.o: ../prj/main.cpp ../prj/mainwindow.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtGui/qguiapplication.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtGui/qinputmethod.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QTabWidget \
 		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QTextEdit \
 		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qtextedit.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qabstractscrollarea.h \
@@ -361,7 +362,23 @@ debug/main.o: ../prj/main.cpp ../prj/mainwindow.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtGui/qtextoption.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtGui/qtextcursor.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtGui/qtextformat.h \
-		C:/Qt/5.12.2/mingw73_64/include/QtGui/qpen.h
+		C:/Qt/5.12.2/mingw73_64/include/QtGui/qpen.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QDialog \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qdialog.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qlayout.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QGridLayout \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QLabel \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qlabel.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QLineEdit \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QPushButton \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug/main.o ../prj/main.cpp
 
 debug/mainwindow.o: ../prj/mainwindow.cpp ../prj/mainwindow.h \
@@ -471,7 +488,32 @@ debug/mainwindow.o: ../prj/mainwindow.cpp ../prj/mainwindow.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtGui/qtouchdevice.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtGui/qicon.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QDialog \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qdialog.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qlayout.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QGridLayout \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QLabel \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qlabel.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qframe.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QLineEdit \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtGui/qtextcursor.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtGui/qtextformat.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtGui/qpen.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtGui/qtextoption.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QPushButton \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QTextEdit \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qtextedit.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtGui/qtextdocument.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug/mainwindow.o ../prj/mainwindow.cpp
 
 debug/moc_mainwindow.o: debug/moc_mainwindow.cpp 
