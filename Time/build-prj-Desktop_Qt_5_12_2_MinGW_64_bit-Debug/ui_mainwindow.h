@@ -15,6 +15,7 @@
 #include <QtWidgets/QDateTimeEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTimeEdit>
 #include <QtWidgets/QWidget>
@@ -28,6 +29,7 @@ public:
     QTimeEdit *timeEdit;
     QDateEdit *dateEdit;
     QDateTimeEdit *dateTimeEdit;
+    QPushButton *pushButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -47,6 +49,9 @@ public:
         dateTimeEdit = new QDateTimeEdit(centralwidget);
         dateTimeEdit->setObjectName(QString::fromUtf8("dateTimeEdit"));
         dateTimeEdit->setGeometry(QRect(70, 130, 194, 22));
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(70, 190, 101, 23));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -64,6 +69,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
+        pushButton->setText(QApplication::translate("MainWindow", "Time Out Event", nullptr));
     } // retranslateUi
 
 };
