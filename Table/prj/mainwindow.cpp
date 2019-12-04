@@ -22,6 +22,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
     // ラベル１のlineEditに文字を表示する。
     ui->lineEdit->setText("TEST");
 
@@ -63,6 +64,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     //ダブルクリックでの編集不可にする
     tblWdgt->setEditTriggers(QAbstractItemView::NoEditTriggers);
+//       tblWdgt->setItemDelegateForColumn(0, new QAbstractItemDelegate(tblWdgt));
 
     //カラム[0]の列幅設定
     tblWdgt->setColumnWidth(COL_1,100);
@@ -103,6 +105,10 @@ void MainWindow::on_pushButton_clicked()
     item[COL_3] = new QTableWidgetItem(QString("data3 #%8.0f").arg(0.1));
     item[COL_4] = new QTableWidgetItem(QString("data4 #%8.0f").arg(0.1));
 //    item[COL_5] = new QTableWidgetItem(QString("data5 #%8.0f").arg(0.1));
+
+    item[COL_2]->setTextAlignment(Qt::AlignHCenter);
+//    item[COL_3]->setTextAlignment(Qt::AlignHCenter);
+
     for(int ncol=0;ncol<COL_MAX;ncol++){ tblWdgt->setItem(m_row, ncol, item[ncol]);}
 
     // 指定したアイテム（行）までスクロール(列は未指定）

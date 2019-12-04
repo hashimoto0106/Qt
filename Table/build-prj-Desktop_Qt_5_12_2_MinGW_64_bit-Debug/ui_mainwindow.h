@@ -11,11 +11,13 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QScrollArea>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTableView>
 #include <QtWidgets/QTableWidget>
@@ -33,6 +35,11 @@ public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
+    QScrollArea *scrollArea;
+    QWidget *scrollAreaWidgetContents;
+    QWidget *gridLayoutWidget;
+    QGridLayout *gridLayout;
+    QLineEdit *lineEdit_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -87,16 +94,33 @@ public:
         tableWidget->setColumnCount(5);
         lineEdit = new QLineEdit(centralwidget);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setGeometry(QRect(30, 470, 113, 20));
+        lineEdit->setGeometry(QRect(50, 410, 113, 20));
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(190, 470, 75, 23));
+        pushButton->setGeometry(QRect(190, 410, 75, 23));
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(290, 470, 75, 23));
+        pushButton_2->setGeometry(QRect(290, 410, 75, 23));
         pushButton_3 = new QPushButton(centralwidget);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setGeometry(QRect(390, 470, 75, 23));
+        pushButton_3->setGeometry(QRect(390, 410, 75, 23));
+        scrollArea = new QScrollArea(centralwidget);
+        scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
+        scrollArea->setGeometry(QRect(130, 440, 211, 111));
+        scrollArea->setWidgetResizable(true);
+        scrollAreaWidgetContents = new QWidget();
+        scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 209, 109));
+        gridLayoutWidget = new QWidget(scrollAreaWidgetContents);
+        gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
+        gridLayoutWidget->setGeometry(QRect(0, 0, 211, 111));
+        gridLayout = new QGridLayout(gridLayoutWidget);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        gridLayout->setContentsMargins(0, 0, 0, 0);
+        scrollArea->setWidget(scrollAreaWidgetContents);
+        lineEdit_2 = new QLineEdit(centralwidget);
+        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        lineEdit_2->setGeometry(QRect(350, 480, 113, 20));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));

@@ -126,8 +126,8 @@
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>470</y>
+      <x>50</x>
+      <y>410</y>
       <width>113</width>
       <height>20</height>
      </rect>
@@ -137,7 +137,7 @@
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>470</y>
+      <y>410</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -150,7 +150,7 @@
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>470</y>
+      <y>410</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -163,13 +163,57 @@
     <property name="geometry">
      <rect>
       <x>390</x>
-      <y>470</y>
+      <y>410</y>
       <width>75</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
      <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>440</y>
+      <width>211</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>209</width>
+       <height>109</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>211</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout"/>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>480</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
     </property>
    </widget>
   </widget>

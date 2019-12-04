@@ -120,10 +120,51 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+
+    QWidget *scrollWidget = new QWidget();
+    QGridLayout *scrollLayout = new QGridLayout(scrollWidget);
+
+    scrollLayout->addWidget(new QLabel("hoge"));
+    scrollLayout->addWidget(new QLabel("hoge"));
+    scrollLayout->addWidget(new QLabel("hoge"));
+    scrollLayout->addWidget(new QLabel("hoge"));
+    scrollLayout->addWidget(new QLabel("hoge"));
+    scrollLayout->addWidget(new QLabel("hoge"));
+    scrollLayout->addWidget(new QLabel("hoge"));
+    scrollLayout->addWidget(new QLabel("hoge"));
+    scrollLayout->addWidget(new QLabel("hoge"));
+    scrollLayout->addWidget(new QLabel("hoge"));
+    scrollLayout->addWidget(new QLabel("hoge"));
+    scrollLayout->addWidget(new QLabel("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollLayout->addWidget(new QLineEdit("hoge"));
+    scrollWidget->setLayout(scrollLayout);
+
+    ui->scrollArea->setWidgetResizable( true );
+    ui->scrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    ui->scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+    ui->scrollArea->setWidget(scrollWidget);
+
 //    test1();
 //    test2();
 //    test3();
-      test4();
+//      test4();
 //      test5();
 }
 
