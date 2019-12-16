@@ -1,0 +1,11 @@
+
+
+Startup Time:
+End Time:
+Operating Time:
+Application Version:
+OS:
+Qt Version:
+User:
+Work Directory:
+
