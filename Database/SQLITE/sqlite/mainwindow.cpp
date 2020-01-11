@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDebug>
+#include <QtSql/QSqlDatabase>
+#include <QtSql/QSqlQuery>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -9,7 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     db = QSqlDatabase::addDatabase("QSQLITE" , "CONNECTION NAME");
-    db.setDatabaseName("C:\\sqlite_db_file.sqlite");
+    db.setDatabaseName("sampledatabase.db");
     if(!db.open())
     {
         qDebug() << "Can't Connect to DB !";
@@ -41,3 +43,8 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::on_pushButton_clicked()
+{
+
+}
