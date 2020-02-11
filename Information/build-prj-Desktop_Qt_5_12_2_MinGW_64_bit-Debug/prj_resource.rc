@@ -1,8 +1,8 @@
 #include <windows.h>
 
 VS_VERSION_INFO VERSIONINFO
-	FILEVERSION 0,0,1,0
-	PRODUCTVERSION 0,0,1,0
+	FILEVERSION 1,2,3,4
+	PRODUCTVERSION 1,2,3,4
 	FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
 	FILEFLAGS VS_FF_DEBUG
@@ -19,11 +19,11 @@ VS_VERSION_INFO VERSIONINFO
 			BEGIN
 				VALUE "CompanyName", "作者名\0"
 				VALUE "FileDescription", "アプリの説明\0"
-				VALUE "FileVersion", "0.0.1.0\0"
+				VALUE "FileVersion", "1.2.3.4\0"
 				VALUE "LegalCopyright", "(C) 2014 作者\0"
 				VALUE "OriginalFilename", "prj.exe\0"
 				VALUE "ProductName", "MyApp\0"
-				VALUE "ProductVersion", "0.0.1.0\0"
+				VALUE "ProductVersion", "1.2.3.4\0"
 			END
 		END
 		BLOCK "VarFileInfo"

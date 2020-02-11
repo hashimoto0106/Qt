@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     setToolTip("Hello, world");
+    ui->radioButton->setToolTip("radioButton ToopTip");
 }
 
 MainWindow::~MainWindow()

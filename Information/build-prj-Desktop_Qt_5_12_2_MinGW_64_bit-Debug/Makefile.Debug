@@ -467,7 +467,23 @@ debug/mainwindow.o: ../prj/mainwindow.cpp ../prj/mainwindow.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtGui/qtouchdevice.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.12.2/mingw73_64/include/QtGui/qicon.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtCore/QVariant \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QApplication \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qapplication.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtCore/qeventloop.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtGui/qguiapplication.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtGui/qinputmethod.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QMenuBar \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qmenu.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qaction.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qactiongroup.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QStatusBar \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt/5.12.2/mingw73_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug/mainwindow.o ../prj/mainwindow.cpp
 
 debug/moc_mainwindow.o: debug/moc_mainwindow.cpp 
